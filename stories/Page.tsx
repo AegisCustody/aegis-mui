@@ -4,7 +4,7 @@ import { Typography } from '../components'
 const Page: React.FC = () => {
   return (
     <section>
-      <Typography>Pages in Storybook</Typography>
+      <Typography>Material-UI Components</Typography>
     </section>
   )
 }
