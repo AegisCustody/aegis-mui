@@ -4,6 +4,50 @@ const paletteOptions: PaletteOptions | undefined = {
   primary: {
     main: '#4BADD8',
   },
+  secondary: {
+    main: '#005E85',
+  },
+  tertiary: {
+    main: '#9DD0F0',
+  },
+  success: {
+    main: '#31D0AA',
+  },
+  stroke: {
+    main: '#DCDEDF',
+  },
+  error: {
+    main: '#FF0000',
+  },
+  reject: {
+    main: '#E1125E',
+  },
+  menu: {
+    main: '#818181',
+  },
+  text: {
+    primary: '#414141',
+    secondary: '#A1A1A1',
+  },
+  background: {
+    default: '#FAFCFE',
+  },
+}
+
+declare module '@mui/material/styles' {
+  interface Palette {
+    tertiary: Palette['primary']
+    reject: Palette['primary']
+    stroke: Palette['primary']
+    menu: Palette['primary']
+  }
+
+  interface PaletteOptions {
+    tertiary: PaletteOptions['primary']
+    reject: PaletteOptions['primary']
+    stroke: PaletteOptions['primary']
+    menu: PaletteOptions['primary']
+  }
 }
 
 export default paletteOptions
