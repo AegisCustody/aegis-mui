@@ -9,6 +9,13 @@ const componentOptions: Components<Omit<Theme, 'components'>> | undefined = {
         '&:hover': {
           boxShadow: 'none',
         },
+        '&.MuiButton-text': {
+          minHeight: 'fit-content',
+          padding: 0,
+          '&:hover': {
+            backgroundColor: 'transparent',
+          },
+        },
         '&.MuiButton-containedPrimary': {
           color: 'white',
         },
