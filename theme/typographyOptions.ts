@@ -62,8 +62,9 @@ const typographyOptions:
   },
   menuItem: {
     fontSize: '14px',
-    fontWeight: 400,
-    lineHeight: '16px',
+    fontWeight: 700,
+    lineHeight: 1.5,
+    letterSpacing: '0.05em',
   },
 })
 
