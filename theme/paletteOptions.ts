@@ -50,4 +50,22 @@ declare module '@mui/material/styles' {
   }
 }
 
+declare module '@mui/material/Button' {
+  interface ButtonPropsColorOverrides {
+    tertiary: true
+    reject: true
+    stroke: true
+    menu: true
+  }
+}
+
+declare module '@mui/material/SvgIcon' {
+  interface SvgIconPropsColorOverrides {
+    tertiary: true
+    reject: true
+    stroke: true
+    menu: true
+  }
+}
+
 export default paletteOptions
