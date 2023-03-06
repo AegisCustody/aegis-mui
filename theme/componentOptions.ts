@@ -1,4 +1,7 @@
 import { Components, Theme } from '@mui/material'
+import paletteOptions from './paletteOptions'
+
+const palette: any = paletteOptions
 
 const componentOptions: Components<Omit<Theme, 'components'>> | undefined = {
   MuiButton: {
@@ -18,6 +21,9 @@ const componentOptions: Components<Omit<Theme, 'components'>> | undefined = {
         },
         '&.MuiButton-containedPrimary': {
           color: 'white',
+        },
+        '&.MuiButton-outlinedSecondary': {
+          border: `1px solid ${palette.secondary.main}`,
         },
       },
     },
