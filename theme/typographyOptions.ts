@@ -37,9 +37,11 @@ const typographyOptions:
     color: palette.primary.main,
   },
   hint: {
+    display: 'block',
     fontSize: '12px',
     fontWeight: 400,
     lineHeight: 1.4,
+    textAlign: 'justify',
   },
   title: {
     color: 'black',
