@@ -6,6 +6,23 @@ const palette: any = paletteOptions
 const { breakpoints } = createTheme()
 
 const componentOptions: Components<Omit<Theme, 'components'>> | undefined = {
+  MuiCard: {
+    styleOverrides: {
+      root: {
+        boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
+      },
+    },
+  },
+  MuiCardContent: {
+    styleOverrides: {
+      root: {
+        padding: '30px',
+        '&:last-child': {
+          paddingBottom: '30px',
+        },
+      },
+    },
+  },
   MuiButton: {
     styleOverrides: {
       root: {
