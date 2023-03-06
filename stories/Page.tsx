@@ -4,17 +4,28 @@ import { Stack, Typography } from '../components'
 const Page: React.FC = () => {
   return (
     <>
-      <Typography variant="title">Typography：</Typography>
-      <Stack>
-        <Typography variant="h1">h1</Typography>
-        <Typography variant="body1">body1</Typography>
-        <Typography variant="body2">body2</Typography>
-        <Typography variant="link">link</Typography>
-        <Typography variant="hint">hint</Typography>
-        <Typography variant="title">title</Typography>
-        <Typography variant="subtitle">subtitle</Typography>
-        <Typography variant="menuType">menuType</Typography>
-        <Typography variant="menuItem">menuItem</Typography>
+      <Typography variant="title">Typography</Typography>
+
+      <Stack gap="4px">
+        <Typography variant="h1">h1.Heading</Typography>
+        <Typography variant="body1">
+          body1.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
+          unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate
+          numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.
+        </Typography>
+        <Typography variant="body2">
+          body2.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
+          unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate
+          numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.
+        </Typography>
+        <Typography variant="link">link.TEXT</Typography>
+        <Typography variant="hint">hint.TEXT</Typography>
+        <Typography variant="title">title.TEXT</Typography>
+        <Typography variant="subtitle">
+          subtitle.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
+        </Typography>
+        <Typography variant="menuType">menuType.TEXT</Typography>
+        <Typography variant="menuItem">menuItem.TEXT</Typography>
       </Stack>
     </>
   )
