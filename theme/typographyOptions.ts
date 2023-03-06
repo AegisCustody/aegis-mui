@@ -19,7 +19,7 @@ const typographyOptions:
   body1: {
     fontSize: '14px',
     fontWeight: 400,
-    lineHeight: '16px',
+    lineHeight: 1.4,
     textAlign: 'justify',
   },
   body2: {
@@ -63,7 +63,7 @@ const typographyOptions:
   menuType: {
     fontSize: '10px',
     fontWeight: 900,
-    lineHeight: '12px',
+    lineHeight: 1.2,
     letterSpacing: '0.2em',
   },
   menuItem: {
