@@ -6,8 +6,9 @@ const { breakpoints } = createTheme()
 const typographyOptions:
   | TypographyOptions
   | ((palette: Palette) => TypographyOptions)
-  | undefined = theme => ({
+  | undefined = palette => ({
   h1: {
+    color: 'black',
     fontSize: '32px',
     fontWeight: 700,
     lineHeight: '38px',
@@ -19,11 +20,13 @@ const typographyOptions:
     fontSize: '14px',
     fontWeight: 400,
     lineHeight: '16px',
+    textAlign: 'justify',
   },
   body2: {
     fontSize: '16px',
     fontWeight: 400,
     lineHeight: 1.5,
+    textAlign: 'justify',
   },
   button: {
     fontWeight: 'bold',
@@ -31,7 +34,7 @@ const typographyOptions:
   },
   link: {
     fontWeight: 'bold',
-    color: theme.primary.main,
+    color: palette.primary.main,
   },
   hint: {
     fontSize: '12px',
@@ -39,6 +42,7 @@ const typographyOptions:
     lineHeight: 1.4,
   },
   title: {
+    color: 'black',
     fontSize: '32px',
     fontWeight: 700,
     lineHeight: '38px',

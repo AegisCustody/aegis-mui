@@ -1,7 +1,9 @@
-import { Components, Theme } from '@mui/material'
+import { Components, createTheme, Theme } from '@mui/material'
 import paletteOptions from './paletteOptions'
 
 const palette: any = paletteOptions
+
+const { breakpoints } = createTheme()
 
 const componentOptions: Components<Omit<Theme, 'components'>> | undefined = {
   MuiButton: {
@@ -34,6 +36,19 @@ const componentOptions: Components<Omit<Theme, 'components'>> | undefined = {
         '&.Mui-disabled': {
           cursor: 'not-allowed',
           pointerEvents: 'auto',
+        },
+      },
+    },
+  },
+  MuiDialogContent: {
+    styleOverrides: {
+      root: {
+        display: 'grid',
+        gap: '30px',
+        padding: '60px',
+        textAlign: 'center',
+        [breakpoints.down('md')]: {
+          padding: '30px',
         },
       },
     },
