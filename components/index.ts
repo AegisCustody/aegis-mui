@@ -1,8 +1,4 @@
-export * from '@mui/material'
-export * from './Button'
 export { default as Button } from './Button'
-export * from './Card'
 export { default as Card } from './Card'
-export * from './Dialog'
 export { default as Dialog } from './Dialog'
 export * from './Icon'

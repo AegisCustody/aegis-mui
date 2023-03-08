@@ -1,5 +1,6 @@
+import { Stack, Typography } from '@mui/material'
 import { ComponentMeta, ComponentStory } from '@storybook/react'
-import { Card, Stack, Typography } from '../components'
+import { Card } from '../components'
 import ThemeTemplate from './ThemeTemplate'
 
 export default {

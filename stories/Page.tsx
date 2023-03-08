@@ -1,5 +1,5 @@
+import { Stack, Typography } from '@mui/material'
 import React from 'react'
-import { Stack, Typography } from '../components'
 
 const Page: React.FC = () => {
   return (
