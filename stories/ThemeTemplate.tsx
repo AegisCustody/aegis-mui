@@ -1,13 +1,12 @@
-import { ThemeProvider } from '@emotion/react'
 import React from 'react'
-import theme from '../theme'
+import ThemeProvider from '../theme'
 
 interface TemplateProps {
   component: React.ReactNode
 }
 
 const ThemeTemplate: React.FC<TemplateProps> = ({ component }) => {
-  return <ThemeProvider theme={theme}>{component}</ThemeProvider>
+  return <ThemeProvider>{component}</ThemeProvider>
 }
 
 export default ThemeTemplate
