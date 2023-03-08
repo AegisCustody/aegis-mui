@@ -1,9 +1,9 @@
 import MuiDialog, { DialogProps } from '@mui/material/Dialog'
-import DialogContent from '@mui/material/DialogContent'
-import { styled } from '@mui/system'
+import MuiDialogContent from '@mui/material/DialogContent'
+import { styled } from '@mui/material/styles'
 import React from 'react'
 
-const MuiDialogContent = styled(DialogContent)(({ theme }) => ({
+const StyledDialogContent = styled(MuiDialogContent)(({ theme }) => ({
   display: 'grid',
   gap: '30px',
   padding: '60px',
@@ -16,7 +16,7 @@ const MuiDialogContent = styled(DialogContent)(({ theme }) => ({
 const Dialog: React.FC<DialogProps> = ({ children, ...props }) => {
   return (
     <MuiDialog fullWidth {...props}>
-      <MuiDialogContent>{children}</MuiDialogContent>
+      <StyledDialogContent>{children}</StyledDialogContent>
     </MuiDialog>
   )
 }
