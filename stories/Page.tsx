@@ -1,5 +1,5 @@
-import { Divider, Stack, Typography } from '@mui/material'
-import React from 'react'
+import { Divider, Stack, Switch, Typography } from '@mui/material'
+import React, { useState } from 'react'
 import { Button } from '../components'
 
 const palettes: any[] = [
@@ -16,6 +16,8 @@ const palettes: any[] = [
 ]
 
 const Page: React.FC = () => {
+  const [loading, setLoading] = useState(false)
+
   return (
     <Stack gap="8px">
       <Typography variant="title">Typography</Typography>
@@ -41,12 +43,15 @@ const Page: React.FC = () => {
       <Typography variant="menuType">menuType.TEXT</Typography>
       <Typography variant="menuItem">menuItem.TEXT</Typography>
 
-      <Typography variant="title">Button</Typography>
+      <Typography variant="title">
+        Button
+        <Switch onClick={() => setLoading(!loading)} />
+      </Typography>
       <Divider />
 
       <Stack direction="row" gap="8px">
         {palettes.map(palette => (
-          <Button key={palette} color={palette} variant="contained">
+          <Button key={palette} color={palette} loading={loading} variant="contained">
             {palette}
           </Button>
         ))}
@@ -54,7 +59,7 @@ const Page: React.FC = () => {
 
       <Stack direction="row" gap="8px">
         {palettes.map(palette => (
-          <Button key={palette} color={palette} variant="outlined">
+          <Button key={palette} color={palette} loading={loading} variant="outlined">
             {palette}
           </Button>
         ))}
@@ -62,7 +67,7 @@ const Page: React.FC = () => {
 
       <Stack direction="row" gap="8px">
         {palettes.map(palette => (
-          <Button key={palette} color={palette} variant="text">
+          <Button key={palette} color={palette} loading={loading} variant="text">
             {palette}
           </Button>
         ))}
