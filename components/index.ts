@@ -1,5 +1,6 @@
 export { default as Alert } from './Alert'
-export { default as Button } from './Button'
+export * from './Button'
 export { default as Card } from './Card'
 export { default as Dialog } from './Dialog'
 export * from './Icon'
+export * from './Table'
