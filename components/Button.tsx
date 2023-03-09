@@ -12,6 +12,7 @@ const Button = styled(MuiButton)(({ theme }) => ({
     pointerEvents: 'auto',
   },
   '&.MuiButton-text': {
+    minWidth: 'fit-content',
     minHeight: 'fit-content',
     padding: 0,
     '&:hover': {
@@ -19,6 +20,9 @@ const Button = styled(MuiButton)(({ theme }) => ({
     },
   },
   '&.MuiButton-containedPrimary': {
+    color: 'white',
+  },
+  '&.MuiButton-containedSuccess': {
     color: 'white',
   },
   '&.MuiButton-outlinedSecondary': {
