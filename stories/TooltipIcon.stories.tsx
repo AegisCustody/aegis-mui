@@ -4,7 +4,7 @@ import { TooltipIcon } from '../components'
 import ThemeTemplate from './ThemeTemplate'
 
 export default {
-  title: 'ToolTipIcon',
+  title: 'Icon/ToolTipIcon',
   component: TooltipIcon,
 } as ComponentMeta<typeof TooltipIcon>
 
