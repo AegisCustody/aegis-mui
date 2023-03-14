@@ -4,7 +4,7 @@ import { IconBtn } from '../components'
 import ThemeTemplate from './ThemeTemplate'
 
 export default {
-  title: 'IconBtn',
+  title: 'Button/IconBtn',
   component: IconBtn,
 } as ComponentMeta<typeof IconBtn>
 

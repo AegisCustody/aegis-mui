@@ -3,7 +3,7 @@ import { Button } from '../components'
 import ThemeTemplate from './ThemeTemplate'
 
 export default {
-  title: 'Button',
+  title: 'Button/Button',
   component: Button,
 } as ComponentMeta<typeof Button>
 
