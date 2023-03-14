@@ -28,7 +28,7 @@ interface Config {
   header: string
   tooltip?: string
   alignment?: Alignment
-  render?: React.ComponentType<any>
+  render?: React.ComponentType
 }
 
 interface TableProps extends MuiTableProps {
@@ -36,7 +36,7 @@ interface TableProps extends MuiTableProps {
   list?: any[]
   total?: number
   loading?: boolean
-  rowExpansion?: React.ComponentType<any>
+  rowExpansion?: React.ComponentType
   onPageChange?: (page: Page) => void
 }
 
