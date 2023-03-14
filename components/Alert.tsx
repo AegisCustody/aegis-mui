@@ -8,8 +8,8 @@ const StyledBox = styled(Box)(({ theme }) => ({
   backgroundColor: theme.palette.background.default,
 }))
 
-const Alert: React.FC<BoxProps> = ({ children }) => {
-  return <StyledBox>{children}</StyledBox>
+const Alert: React.FC<BoxProps> = ({ children, ...props }) => {
+  return <StyledBox {...props}>{children}</StyledBox>
 }
 
 export default Alert
