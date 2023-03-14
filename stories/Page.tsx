@@ -1,6 +1,7 @@
+import CheckIcon from '@mui/icons-material/Check'
 import { Divider, Stack, Switch, Typography } from '@mui/material'
 import React, { useState } from 'react'
-import { Button } from '../components'
+import { ActionBtn, Button } from '../components'
 
 const palettes: any[] = [
   'primary',
@@ -70,6 +71,15 @@ const Page: React.FC = () => {
           <Button key={palette} color={palette} loading={loading} variant="text">
             {palette}
           </Button>
+        ))}
+      </Stack>
+
+      <Typography variant="title">Action Button</Typography>
+      <Divider />
+
+      <Stack direction="row" gap="8px">
+        {palettes.map(palette => (
+          <ActionBtn key={palette} color={palette} icon={<CheckIcon />} />
         ))}
       </Stack>
     </Stack>
