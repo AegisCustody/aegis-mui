@@ -33,8 +33,10 @@ const typographyOptions:
     textTransform: 'none',
   },
   link: {
+    width: 'fit-content',
     fontWeight: 'bold',
     color: palette.primary.main,
+    cursor: 'pointer',
   },
   hint: {
     display: 'block',
